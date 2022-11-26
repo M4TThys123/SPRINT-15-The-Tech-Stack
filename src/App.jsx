@@ -1,10 +1,10 @@
 import './App.css';
-import Nav from './components/Nav';
+import Modal from './components/Modal';
 
 function App() {
   return (
     <>
-      <Nav />
+      <Modal />
     </>
   );
 }
