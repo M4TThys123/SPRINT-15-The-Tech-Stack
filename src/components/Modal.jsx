@@ -1,10 +1,10 @@
 import './Modal.css'
 
-function Modal() {
+function Modal({title}) {
   return (
     <div>
       <div className="modal">
-        <p className="modal__title">Weet je het zeker?</p>
+        <p className="modal__title">{title}</p>
         <div className="modal__buttons">
           <button className="btn btn__cancel">Annuleren</button>
           <button className="btn btn__primary">Bevestigen</button>

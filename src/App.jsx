@@ -4,7 +4,7 @@ import Modal from './components/Modal';
 function App() {
   return (
     <>
-      <Modal />
+      <Modal title="Weet je het zeker?"/>
     </>
   );
 }
