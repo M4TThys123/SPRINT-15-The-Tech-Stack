@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 
 function Counter () {
+    function resetCounter () {
+        setCounter (0)
+    }
+
     const [counter, setCounter] = useState(0)
     function incrementCounter() {
-        setCounter(counter + 1)
+        setCounter((prevCounter) => prevCounter + 1)
     }
     function decrementCounter() {
         setCounter(counter - 1)
@@ -13,6 +17,7 @@ function Counter () {
             <button onClick={decrementCounter}>-</button>
                 {counter}
             <button onClick={incrementCounter}>+</button>
+            <button onClick={resetCounter}>Reset</button>
         </div>
     )
 }
