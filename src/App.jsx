@@ -1,18 +1,17 @@
-import './App.css';
-import Modal from './components/Modal';
+import "./App.css";
+import Modal from "./components/Modal";
+import Counter from "./components/Counter";
+import React, { useState } from "react";
 
 function App() {
-  let isModalOpen = false;
-
-  function toggleModal(){
-    console.log('model klikt')
-    isModalOpen = !isModalOpen
-  }
-
+  return <Counter />
+  
+  const [showModal, setShowModal] = useState(false);
+  
   return (
     <>
-      <button onClick={toggleModal}>ToggleModal</button>
-      {isModalOpen && <Modal title="Weet je het zeker?"/>}
+      <button onClick={() => {setShowModal(true)}}>ToggleModal</button>
+      {showModal && <Modal title="Weet je het zeker?" />}
     </>
   );
 }
