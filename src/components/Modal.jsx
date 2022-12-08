@@ -1,6 +1,6 @@
 import "./Modal.css";
 
-function Modal({ title }) {
+function Modal({ title, secondary, primary, secondaryFunciton, primaryFunciton  }) {
   return (
     <div>
       <div className="modal">
@@ -8,11 +8,9 @@ function Modal({ title }) {
         <div className="modal__buttons">
           <button
             className="btn btn__cancel"
-            onClick={() => {
-              console.log("Annuleren");
-            }}
+            onClick={secondaryFunciton}
           >
-            Annuleren
+            {secondary}
           </button>
           <button
             className="btn btn__primary"
@@ -20,7 +18,7 @@ function Modal({ title }) {
               console.log("Bevestigen");
             }}
           >
-            Bevestigen
+            {primary}
           </button>
         </div>
       </div>
