@@ -13,6 +13,7 @@ import Modal from "./components/Modal";
 function App() {
   const [document] = useFirstPrismicDocument()
   console.log(document)
+  
 
   const [showModal, setShowModal] = useState(true);
 
