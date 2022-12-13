@@ -1,28 +1,27 @@
 import "./App.css";
-import Modal from "./components/Modal";
-import Counter from "./components/Counter";
 import React, { useState } from "react";
-import EmitEvent from "./components/EmitEvent"
+
+import Nav from "./components/Nav";
+import Modal from "./components/Modal";
+// import PageCounter from "./components/PageCounter";
+
+// import Counter from "./components/Counter";
+// import EmitEvent from "./components/EmitEvent"
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
-  function clickedFunction () {
-    console.log('Parent wordt genotificeerd')
+  function cancelModal () {
+    setShowModal(false)
   }
-  return(
-    <EmitEvent prop={clickedFunction}/>
-    )
 
   return (
-    <>
-      <button
-        onClick={() => {
-          setShowModal(true);
-        }}
-      >
-        ToggleModal
-      </button>
+    <div className="container">
+      <Nav />
+      
+      <main>
+          
+      </main>
 
       {showModal && (
         <Modal
@@ -30,13 +29,12 @@ function App() {
           title="Ben je voor het eerst op deze website?"
           secondary="nee"
           primary="ja"
-
-          // Emitting Events 
-          secondaryFunciton="setShowModal(fasle)"
-          primaryFunciton="setShowModal"
+          // Emitting Events
+          secondaryFunciton={cancelModal}
+          primaryFunciton={setShowModal}
         />
       )}
-    </>
+    </div>
   );
 }
 

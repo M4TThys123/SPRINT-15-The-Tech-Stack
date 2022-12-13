@@ -8,14 +8,14 @@ function Modal({ title, secondary, primary, secondaryFunciton, primaryFunciton  
         <div className="modal__buttons">
           <button
             className="btn btn__cancel"
-            onClick={secondaryFunciton}
+            onClick={() => {primaryFunciton(false)}}
           >
             {secondary}
           </button>
           <button
             className="btn btn__primary"
             onClick={() => {
-              console.log("Bevestigen");
+              secondaryFunciton(false);
             }}
           >
             {primary}
