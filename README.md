@@ -1,6 +1,6 @@
 # SPRINT 15
 ## The Tech Stack React Application
-Dit is een React App voor de CMD Minor op basis van Prismic.io
+Dit is een React App voor de CMD Minor op basis van Prismic.io 
 
 ### 🧭 Navigeer door deze wiki heen.
 * [👀 Analyseren](https://github.com/M4TThys123/SPRINT-15-The-Tech-Stack/wiki/%F0%9F%91%80-Analyseren)
