@@ -6,7 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { PrismicProvider } from '@prismicio/react'
-import { client } from './prismic'
+import { client } from './prismic.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

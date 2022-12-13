@@ -1,6 +1,8 @@
 import "./App.css";
 import React, { useState } from "react";
+import { PrismicRichText, useFirstPrismicDocument } from '@prismicio/react'
 
+// Components
 import Nav from "./components/Nav";
 import Modal from "./components/Modal";
 // import PageCounter from "./components/PageCounter";
@@ -9,18 +11,30 @@ import Modal from "./components/Modal";
 // import EmitEvent from "./components/EmitEvent"
 
 function App() {
+  const [document] = useFirstPrismicDocument()
+  console.log(document)
+
   const [showModal, setShowModal] = useState(true);
 
   function cancelModal () {
     setShowModal(false)
   }
 
+  return(
+      <div>
+        hallo
+    {/* {document && (
+      <PrismicRichText field={document.data.example_rich_text} />
+    )} */}
+    </div>
+  )
+
   return (
     <div className="container">
       <Nav />
       
       <main>
-          
+
       </main>
 
       {showModal && (
