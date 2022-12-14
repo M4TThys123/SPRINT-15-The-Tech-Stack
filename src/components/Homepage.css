@@ -35,7 +35,8 @@ figure > h1 {
 }
 
 h2{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    font-size: 48px;
 }
 
 

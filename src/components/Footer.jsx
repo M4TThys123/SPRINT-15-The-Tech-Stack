@@ -1,4 +1,5 @@
 import "./Footer.css";
+import "boxicons";
 
 function Footer() {
   return (
@@ -8,7 +9,7 @@ function Footer() {
           <h3 class="footer__logo">MB</h3>
           <span class="footer__logo--popper">
             Top
-            <i class="bx bx-up-arrow-alt" />
+            <box-icon name='up-arrow-alt' classList="arrow"></box-icon>
           </span>
         </a>
         <div class="footer__social--list">

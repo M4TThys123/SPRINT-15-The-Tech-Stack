@@ -73,3 +73,7 @@
     .link__hover-effect--white::after{
         background-color: white;
     }
+
+.arrow{
+    background: white;
+}
