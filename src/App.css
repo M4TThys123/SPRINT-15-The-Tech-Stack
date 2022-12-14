@@ -91,13 +91,14 @@ main span{
     margin-bottom: -2px;
 }
 
-main h2{
+/* Alleen gebruiken bij de docs */
+/* main h2{
     padding: .25rem;
     margin-bottom: 1rem;
     margin-top: 4px;
     font-size: 1.3rem;
     border: 2px solid black;
-}
+} */
 
 /* BREAKPOINTS */
 /* For small devices */

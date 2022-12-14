@@ -1,0 +1,15 @@
+header {
+  background-color: var(--yellow);
+
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
